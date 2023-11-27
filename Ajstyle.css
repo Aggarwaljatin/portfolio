@@ -1,0 +1,377 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navba {
+    background-color:#244D61;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    background-color:#244D61;
+    margin-right: 20px;
+    float: left;
+    
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.a:hover{
+    color:black;
+    background-color:aquamarine;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color:#244D61;
+        width: 100%;
+    
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .menu-icon.active {
+        transform: rotate(90deg);
+    }
+}
+.gt{
+
+    background-color:#244D61;
+}
+.jj{
+    margin-top: 10%;
+    padding-left: 18%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+}
+@keyframes reveal{
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.Text-animation {
+    display: inline-block;
+    font-size: 55px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: reveal 2s ease-in-out infinite;}
+
+    .custom-btn {
+        width: 130px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+          7px 7px 20px 0px rgba(0,0,0,.1),
+          4px 4px 5px 0px rgba(0,0,0,.1);
+        outline: none;
+       }
+       
+       .btn-1 {
+        background:#244D61;
+        background: linear-gradient(0deg,#244D61 0%, #244D61 100%);
+        border: none;
+       }
+       
+       .btn-1:before {
+        height: 0%;
+        width: 2px;
+       }
+       
+       .btn-1:hover {
+        box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                     -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+           inset -4px -4px 6px 0 rgba(255,255,255,.2),
+           inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+       }
+       
+      .coc{
+        padding-right: 2%;
+        margin-top: 6%;
+        
+      }
+
+      .im1{ 
+        width: 570px;
+        height: 500px;
+        margin-left: 40%;
+        background-blend-mode:color-dodge;
+      }
+      .im2{
+        width: 40%;
+        height:160%;
+        
+      }
+      .bb{
+         padding-left: 7%;
+        background-color:rgba(17, 62, 72, 0.985) ;
+        
+      }
+      .para{
+    
+        font-size: large;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        color:whitesmoke ;
+      }
+      .beautiful-button {
+        position: relative;
+        display: inline-block;
+        background: linear-gradient(to bottom, #1b1c3f, #244D61);
+       /* Gradient background */
+        color: white;
+       /* White text color */
+        font-family: "Segoe UI", sans-serif;
+       /* Stylish and legible font */
+        font-weight: bold;
+        font-size: 12px;
+       /* Large font size */
+        border: none;
+       /* No border */
+        border-radius: 40px;
+       /* Rounded corners */
+        padding: 10px 20px;
+       /* Large padding */
+        cursor: pointer;
+       /* Cursor on hover */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+       /* Subtle shadow */
+        animation: button-shimmer 2s infinite;
+        transition: all 0.3s ease-in-out;
+       /* Smooth transition */
+      }
+      
+      /* Hover animation */
+      .beautiful-button:hover {
+        background: linear-gradient(to bottom, #2c2f63, #5b67b7);
+        animation: button-particles 1s ease-in-out infinite;
+        transform: translateY(-2px);
+      }
+      
+      /* Click animation */
+      .beautiful-button:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      /* Shimmer animation */
+      @keyframes button-shimmer {
+        0% {
+          background-position: left top;
+        }
+      
+        100% {
+          background-position: right bottom;
+        }
+      }
+      
+      /* Particle animation */
+      @keyframes button-particles {
+        0% {
+          background-position: left top;
+        }
+      
+        100% {
+          background-position: right bottom;
+        }
+      }
+      
+     
+      .a1{
+         text-decoration: none;
+      }
+      .dd{
+        background-color:#244D61;
+      }
+
+      .ss{
+        border: solid grey;
+        border-radius: 17%;
+        color: #244D61;
+        background-color: cornsilk;
+      }
+
+     
+
+      .button {
+        position: relative;
+        width: 60px;
+        height: 40px;
+        border: none;
+        background: none;
+        padding:10px;
+      }
+      
+      .X {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 33%;
+        width: 2em;
+        height: 1.5px;
+        background-color: #fff;
+        transform: rotate(45deg);
+      }
+      
+      .Y {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 33%;
+        width: 2em;
+        height: 1.5px;
+        background-color: #fff;
+        transform: rotate(-45deg);
+      }
+      
+      .close {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -40%;
+        left: 70%;
+        width: 3em;
+        height: 1.7em;
+        font-size: 16px;
+        background-color: rgb(254, 255, 225);
+        color: #000;
+        border: 1px solid #000;
+        pointer-events: none;
+        opacity: 0;
+      }
+      
+      .button:hover {
+        background-color: rgb(210, 0, 0);
+      }
+      
+      .button:active {
+        background-color: rgb(130, 0, 0);
+      }
+      
+      .button:hover > .close {
+        animation: close 0.2s forwards 1.25s;
+      }
+      
+      @keyframes close {
+        100% {
+          opacity: 1;
+        }
+      }
+      #submit_btn{
+        background-color:rgb(58, 58, 230);
+      }
+      #submit_btn:hover{
+        background-color: #244D61;
+      }
+      ::placeholder{
+        color:#000
+      }
+
+
+
+
+      /* For animation transition */
+    .reveal {
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: 2s all ease;
+  }
+
+  .reveal.active {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+
+  #whatsappimg{
+    height: 70px;
+    width: 70px;
+   
+  }
+  #whatsapp{
+   bottom: 40px;
+   right: 20px;
+    position: fixed;
+    z-index: positive;    
+  }
+
+  #insta{
+    bottom: 120px;
+    right: 10px;
+     position: fixed;
+     z-index: positive; 
+  }
+
+  #instaimg{
+    height: 70px;
+    width: 90px;
+  }
